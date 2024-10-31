@@ -15,14 +15,17 @@ const swiper = new Swiper('.card-wrapper', {
     //puntos de interrupción receptivos
 
     breakpoints: {
-        0:{
-            slidesPerView:1
-        },
-        768:{
-            slidesPerView:2
-        },
-        1024:{
-            slidesPerView:3
-        },
-    }
-  });
+      0: {
+          slidesPerView: 1,
+          spaceBetween: 10, // Espacio para pantallas pequeñas
+      },
+      768: {
+          slidesPerView: 2,
+          spaceBetween: 20, // Espacio para tablets
+      },
+      1024: {
+          slidesPerView: 3,
+          spaceBetween: 30, // Espacio para laptops
+      },
+  }
+})
